@@ -23,7 +23,8 @@ function init() {
 
     // 2. 相机
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
-    camera.position.set(0, 1, 4); // 初始视角
+    camera.position.set(0, 1, 10); // 初始视角
+    camera.lookat(0, 0, 0);
 
     // 3. 渲染器
     renderer = new THREE.WebGLRenderer({ antialias: true });
